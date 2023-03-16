@@ -1,0 +1,26 @@
+Categories:
+  - Internet
+  - Weather
+License: No license.
+SourceCode: https://github.com/pro1mantis/ArsoVreme-webapp
+
+RepoType: git
+Repo: https://github.com/pro1mantis/ArsoVreme-webapp
+
+Builds:
+  - versionName: '1.0'
+    versionCode: /
+    commit: v1.0
+    # Where build.gradle is:
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y librsvg2-bin openjdk-11-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: /
