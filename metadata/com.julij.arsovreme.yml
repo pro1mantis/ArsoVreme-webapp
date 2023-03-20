@@ -1,7 +1,7 @@
 Categories:
   - Internet
   - Weather
-License: GPL-3.0 LICENCE
+License: GPL-3.0-only
 SourceCode: https://github.com/pro1mantis/ArsoVreme-webapp
 
 RepoType: git
@@ -9,7 +9,7 @@ Repo: https://github.com/pro1mantis/ArsoVreme-webapp
 
 Builds:
   - versionName: '1.0'
-    versionCode: /
+    versionCode: '1'
     commit: v1.0
     # Where build.gradle is:
     subdir: app
@@ -23,4 +23,4 @@ Builds:
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 CurrentVersion: '1.0'
-CurrentVersionCode: /
+CurrentVersionCode: '1'
