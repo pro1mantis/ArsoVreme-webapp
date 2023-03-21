@@ -19,13 +19,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         web = findViewById(R.id.webview);
         WebSettings webSettings = web.getSettings();
-        webSettings.setJavaScriptEnabled(true);;
+        webSettings.setJavaScriptEnabled(true);
         WebSettings settings = web.getSettings();
         settings.setDomStorageEnabled(true);
         web.setWebViewClient(new Callback());
-        web.loadUrl("https://vreme.arso.gov.si/");
+        WebView webview = (WebView)findViewById(R.id.webview);
+        if (savedInstanceState != null)
+            webview.restoreState(savedInstanceState);
+        else
+            web.loadUrl("https://vreme.arso.gov.si/");
     }
-
     private class Callback extends WebViewClient {
         @Override
         public boolean shouldOverrideKeyEvent(WebView view, KeyEvent event) {
