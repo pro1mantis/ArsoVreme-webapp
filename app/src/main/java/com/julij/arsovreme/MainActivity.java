@@ -2,6 +2,7 @@ package com.julij.arsovreme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.http.SslCertificate;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.webkit.WebSettings;
@@ -18,12 +19,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         web = findViewById(R.id.webview);
         WebSettings webSettings = web.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptEnabled(true);;
         WebSettings settings = web.getSettings();
         settings.setDomStorageEnabled(true);
         web.setWebViewClient(new Callback());
-        web.loadUrl("https://vreme.arso.gov.si/napoved/Ljubljana/graf");
-
+        web.loadUrl("https://vreme.arso.gov.si/");
     }
 
     private class Callback extends WebViewClient {
