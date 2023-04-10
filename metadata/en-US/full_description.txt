@@ -1,1 +1,1 @@
-Aplikacija za pregled vremena na Agenciji RS za Okolje, ARSO. 
+Application for weather from Slovenian Environment Agency, ARSO. The app is built in Android Studio with webview library.
