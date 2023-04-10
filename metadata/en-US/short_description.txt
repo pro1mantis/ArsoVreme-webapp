@@ -1,1 +1,1 @@
-Aplikacija za ARSO vreme.
+Application for weather in Slovenia.
