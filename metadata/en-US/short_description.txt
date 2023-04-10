@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Application for weather in Slovenia.
+=======
+Application for weather from Slovenian Environment Agency, ARSO. The app is built in Android Studio with webview library.
+>>>>>>> 92db1ac (Files update)
